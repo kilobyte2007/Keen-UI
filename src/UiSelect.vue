@@ -691,8 +691,8 @@ export default {
     &.is-multiple {
         .ui-select__display {
             line-height: 1.4;
-            padding-bottom: rem(4px);
-            padding-top: rem(4px);
+            padding-bottom: get-size(4px);
+            padding-top: get-size(4px);
         }
     }
 
@@ -798,15 +798,15 @@ export default {
     color: $ui-input-button-color;
     font-size: $ui-input-button-size;
     margin-left: auto;
-    margin-right: rem(-4px);
+    margin-right: get-size(-4px);
 }
 
 .ui-select__dropdown {
     display: block;
     list-style-type: none;
     margin: 0;
-    margin-bottom: rem(8px);
-    min-width: rem(180px);
+    margin-bottom: get-size(8px);
+    min-width: get-size(180px);
     outline: none;
     padding: 0;
     width: 100%;
@@ -826,12 +826,12 @@ export default {
     color: $ui-input-text-color;
     cursor: auto;
     font-family: inherit;
-    font-size: $ui-input-text-font-size - rem(1px);
+    font-size: $ui-input-text-font-size - get-size(1px);
     font-weight: normal;
-    height: $ui-input-height + rem(4px);
+    height: $ui-input-height + get-size(4px);
     outline: none;
-    padding: rem(0 12px);
-    padding-left: rem(40px);
+    padding: get-size(0 12px);
+    padding-left: get-size(40px);
     transition: border 0.1s ease;
     width: 100%;
 
@@ -850,18 +850,18 @@ export default {
     .ui-select__search-icon,
     .ui-select__search-progress {
         position: absolute;
-        top: rem(8px);
+        top: get-size(8px);
     }
 }
 
 .ui-select__search-icon {
     color: $ui-input-icon-color;
-    font-size: rem(20px);
-    left: rem(12px);
+    font-size: get-size(20px);
+    left: get-size(12px);
 }
 
 .ui-select__search-progress {
-    right: rem(12px);
+    right: get-size(12px);
 }
 
 .ui-select__options {
@@ -870,7 +870,7 @@ export default {
     display: block;
     list-style-type: none;
     margin: 0;
-    max-height: rem(256px);
+    max-height: get-size(256px);
     min-width: 100%;
     overflow-y: auto;
     padding: 0;
@@ -879,8 +879,8 @@ export default {
 
 .ui-select__no-results {
     color: $secondary-text-color;
-    font-size: rem(14px);
-    padding: rem(8px 12px);
+    font-size: get-size(14px);
+    padding: get-size(8px 12px);
     width: 100%;
 }
 
@@ -899,7 +899,7 @@ export default {
 
 .ui-select--icon-position-right {
     .ui-select__icon-wrapper {
-        margin-left: rem(8px);
+        margin-left: get-size(8px);
         margin-right: 0;
         order: 1;
     }

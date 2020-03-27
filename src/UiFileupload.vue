@@ -204,11 +204,11 @@ export default {
     justify-content: center;
     letter-spacing: 0.02em;
     line-height: 1;
-    min-width: rem(80px);
+    min-width: get-size(80px);
     overflow: hidden;
     padding: 0;
-    padding-left: rem(16px);
-    padding-right: rem(16px);
+    padding-left: get-size(16px);
+    padding-right: get-size(16px);
     position: relative;
     text-transform: uppercase;
 
@@ -260,9 +260,9 @@ export default {
 }
 
 .ui-fileupload__icon {
-    margin-left: rem(-4px);
-    margin-right: rem(6px);
-    margin-top: rem(-2px);
+    margin-left: get-size(-4px);
+    margin-right: get-size(6px);
+    margin-top: get-size(-2px);
 }
 
 .ui-fileupload__focus-ring {
@@ -292,8 +292,8 @@ export default {
 
 .ui-fileupload--icon-position-right {
     .ui-fileupload__icon {
-        margin-left: rem(6px);
-        margin-right: rem(-4px);
+        margin-left: get-size(6px);
+        margin-right: get-size(-4px);
         order: 1;
     }
 }
@@ -305,21 +305,21 @@ export default {
 .ui-fileupload--size-small {
     font-size: $ui-button-font-size--small;
     height: $ui-button-height--small;
-    padding-left: rem(12px);
-    padding-right: rem(12px);
+    padding-left: get-size(12px);
+    padding-right: get-size(12px);
 
     .ui-fileupload__icon {
         margin-left: 0;
         margin-top: 0;
 
         .ui-icon {
-            font-size: rem(18px);
+            font-size: get-size(18px);
         }
     }
 
     &.ui-fileupload--icon-position-right {
         .ui-fileupload__icon {
-            margin-left: rem(6px);
+            margin-left: get-size(6px);
             margin-right: 0;
         }
     }
@@ -328,18 +328,18 @@ export default {
 .ui-fileupload--size-large {
     font-size: $ui-button-font-size--large;
     height: $ui-button-height--large;
-    padding-left: rem(24px);
-    padding-right: rem(24px);
+    padding-left: get-size(24px);
+    padding-right: get-size(24px);
 
     .ui-fileupload__icon {
-        margin-left: rem(-4px);
-        margin-right: rem(8px);
+        margin-left: get-size(-4px);
+        margin-right: get-size(8px);
     }
 
     &.ui-fileupload--icon-position-right {
         .ui-fileupload__icon {
-            margin-left: rem(8px);
-            margin-right: rem(-4px);
+            margin-left: get-size(8px);
+            margin-right: get-size(-4px);
         }
     }
 }

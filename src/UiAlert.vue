@@ -92,8 +92,8 @@ export default {
 @import './styles/imports';
 
 $ui-alert-color             : rgba(black, 0.75) !default;
-$ui-alert-font-size         : rem(15px) !default;
-$ui-alert-margin-bottom     : rem(16px) !default;
+$ui-alert-font-size         : get-size(15px) !default;
+$ui-alert-margin-bottom     : get-size(16px) !default;
 
 .ui-alert {
     display: flex;
@@ -126,7 +126,7 @@ $ui-alert-margin-bottom     : rem(16px) !default;
 .ui-alert__icon {
     align-self: flex-start;
     flex-shrink: 0;
-    margin-right: rem(12px);
+    margin-right: get-size(12px);
 }
 
 .ui-alert__body {
@@ -136,8 +136,8 @@ $ui-alert-margin-bottom     : rem(16px) !default;
     flex-direction: row;
     margin-bottom: 0;
     margin-top: 0;
-    min-height: rem(48px);
-    padding: rem(12px 16px);
+    min-height: get-size(48px);
+    padding: get-size(12px 16px);
     transition: opacity 0.3s, margin-top 0.4s;
     width: 100%;
 }
@@ -149,10 +149,10 @@ $ui-alert-margin-bottom     : rem(16px) !default;
 .ui-alert__dismiss-button {
     align-self: flex-start;
     flex-shrink: 0;
-    margin-bottom: rem(-4px);
-    margin-left: rem(8px);
-    margin-right: rem(-8px);
-    margin-top: rem(-4px);
+    margin-bottom: get-size(-4px);
+    margin-left: get-size(8px);
+    margin-right: get-size(-8px);
+    margin-top: get-size(-4px);
 }
 
 // ================================================
@@ -224,7 +224,7 @@ $ui-alert-margin-bottom     : rem(16px) !default;
     margin-bottom: 0;
 
     .ui-alert__body {
-        margin-top: rem(-56px);
+        margin-top: get-size(-56px);
         opacity: 0;
     }
 }

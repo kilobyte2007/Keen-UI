@@ -6,8 +6,8 @@
     @return $num / ($num * 0 + 1);
 }
 
-// Converts one or more pixel values into matching rem values.
-@function rem($values, $base: null) {
+// Converts one or more pixel values based on selected sizing strategy.
+@function get-size($values, $base: null) {
     $rem-values: ();
     $count: length($values);
 
@@ -28,14 +28,50 @@
     }
 
     @if $count == 1 {
-        @return to-rem($values, $base);
+        @return to-unit($values, $base);
     }
 
     @for $i from 1 through $count {
-        $rem-values: append($rem-values, to-rem(nth($values, $i), $base));
+        $rem-values: append($rem-values, to-unit(nth($values, $i), $base));
     }
 
     @return $rem-values;
+}
+
+@function to-unit($value, $base: null) {
+    @if $sizing-strategy == 'px' {
+        @return to-px($value, $base);
+    }
+
+    @return to-rem($value, $base);
+}
+
+@function to-px($value, $base: null) {
+    // Check if the value is a number
+    @if type-of($value) != 'number' {
+        @warn inspect($value) + ' was passed to to-px(), which is not a number.';
+        @return $value;
+    }
+
+    // Transform em into px if someone hands over 'em's
+    @if unit($value) == 'em' {
+        $value: strip-unit($value) * 16px;
+    }
+
+    // Transform rem into px if someone hands over 'rem's
+    @if unit($value) == 'rem' {
+        $value: strip-unit($value) * 16px;
+    }
+
+    // Calculate relative pixels
+    $value: (strip-unit($value) * (strip-unit($base) / 16)) * 1px;
+
+    // Turn 0px into 0
+    @if $value == 0px {
+        $value: 0;
+    }
+
+    @return $value;
 }
 
 // Converts a pixel value to matching rem value. *Any* value passed, regardless of unit, is assumed to be a pixel value.
@@ -43,7 +79,7 @@
 @function to-rem($value, $base: null) {
     // Check if the value is a number
     @if type-of($value) != 'number' {
-        @warn inspect($value) + ' was passed to rem(), which is not a number.';
+        @warn inspect($value) + ' was passed to to-rem(), which is not a number.';
         @return $value;
     }
 
@@ -67,5 +103,5 @@
 
 // For backward-compatibility, keep the rem-calc function name used in older versions of Keen UI.
 @function rem-calc($values, $base: null) {
-    @return rem($values, $base);
+    @return get-size($values, $base);
 }

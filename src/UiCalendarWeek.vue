@@ -111,7 +111,7 @@ export default {
 @import './styles/imports';
 
 .ui-calendar-week {
-    font-size: rem(14px);
+    font-size: get-size(14px);
     width: 100%;
 
     td {

@@ -65,7 +65,7 @@ export default {
     cursor: pointer;
     font-family: inherit;
     font-size: $ui-dropdown-item-font-size;
-    padding: rem(8px 12px);
+    padding: get-size(8px 12px);
 
     &:hover {
         background-color: rgba(black, 0.06);
@@ -86,8 +86,8 @@ export default {
     background-position: 50%;
     background-size: cover;
     border-radius: 50%;
-    height: rem(32px);
-    margin-right: rem(12px);
-    width: rem(32px);
+    height: get-size(32px);
+    margin-right: get-size(12px);
+    width: get-size(32px);
 }
 </style>

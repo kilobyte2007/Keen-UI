@@ -128,7 +128,7 @@ export default {
 
     th {
         color: $secondary-text-color;
-        font-size: rem(14px);
+        font-size: get-size(14px);
         font-weight: 600;
         height: $ui-calendar-month-header-height;
         text-align: center;

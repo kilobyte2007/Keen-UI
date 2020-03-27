@@ -183,7 +183,7 @@ export default {
 @import './styles/imports';
 
 .ui-confirm__message {
-    font-size: rem(15px);
+    font-size: get-size(15px);
 }
 
 .ui-confirm__footer {

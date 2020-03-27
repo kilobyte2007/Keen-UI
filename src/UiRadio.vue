@@ -122,11 +122,11 @@ export default {
 <style lang="scss">
 @import './styles/imports';
 
-$ui-radio-size                  : rem(20px) !default;
-$ui-radio-stroke                : rem(2px) !default;
+$ui-radio-size                  : get-size(20px) !default;
+$ui-radio-stroke                : get-size(2px) !default;
 $ui-radio-focus-ring-size       : $ui-radio-size * 2.1 !default;
 $ui-radio-transition-duration   : 0.3s !default;
-$ui-radio-label-font-size       : rem(16px) !default;
+$ui-radio-label-font-size       : get-size(16px) !default;
 
 .ui-radio {
     align-items: center;
@@ -229,7 +229,7 @@ $ui-radio-label-font-size       : rem(16px) !default;
 .ui-radio__label-text {
     cursor: pointer;
     font-size: $ui-radio-label-font-size;
-    margin-left: rem(8px);
+    margin-left: get-size(8px);
 }
 
 // ================================================

@@ -71,7 +71,7 @@ export default {
 <style lang="scss">
 @import './styles/imports';
 
-$ui-progress-linear-height : rem(4px) !default;
+$ui-progress-linear-height : get-size(4px) !default;
 
 .ui-progress-linear {
     display: block;

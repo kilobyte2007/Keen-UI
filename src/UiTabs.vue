@@ -247,7 +247,7 @@ export default {
 @import './styles/imports';
 
 .ui-tabs {
-    margin-bottom: rem(24px);
+    margin-bottom: get-size(24px);
     width: 100%;
 
     &.is-fullwidth {
@@ -282,10 +282,10 @@ export default {
 .ui-tabs__body {
     background-color: white;
     border-radius: 0;
-    border: rem(1px) solid $md-grey-200;
+    border: get-size(1px) solid $md-grey-200;
     border-top: 0;
     margin: 0;
-    padding: rem(16px);
+    padding: get-size(16px);
 }
 
 // ================================================

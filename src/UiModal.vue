@@ -270,11 +270,11 @@ export default {
 
 $ui-modal-transition-duration   : 0.3s !default;
 $ui-modal-mask-background       : rgba(black, 0.5) !default;
-$ui-modal-header-height         : rem(56px);
-$ui-modal-footer-height         : rem(70px);
+$ui-modal-header-height         : get-size(56px);
+$ui-modal-footer-height         : get-size(70px);
 
-$ui-modal-font-size             : rem(14px);
-$ui-modal-header-font-size      : rem(18px);
+$ui-modal-font-size             : get-size(14px);
+$ui-modal-header-font-size      : get-size(18px);
 
 .ui-modal {
     font-family: $font-stack;
@@ -298,7 +298,7 @@ $ui-modal-header-font-size      : rem(18px);
 
     &:not(.has-footer) {
         .ui-modal__body {
-            padding: rem(16px 24px 24px);
+            padding: get-size(16px 24px 24px);
         }
     }
 }
@@ -343,7 +343,7 @@ $ui-modal-header-font-size      : rem(18px);
     padding: 0;
     text-align: initial;
     transition: all $ui-modal-transition-duration ease;
-    width: rem(528px);
+    width: get-size(528px);
 }
 
 .ui-modal__header {
@@ -352,7 +352,7 @@ $ui-modal-header-font-size      : rem(18px);
     box-shadow: 0 1px 1px rgba(black, 0.16);
     display: flex;
     height: $ui-modal-header-height;
-    padding: rem(0 24px);
+    padding: get-size(0 24px);
     position: relative;
     z-index: 1;
 }
@@ -368,13 +368,13 @@ $ui-modal-header-font-size      : rem(18px);
 
 .ui-modal__close-button {
     margin-left: auto;
-    margin-right: rem(-8px);
+    margin-right: get-size(-8px);
 }
 
 .ui-modal__body {
     max-height: calc(100vh - #{$ui-modal-header-height});
     overflow-y: auto;
-    padding: rem(16px 24px);
+    padding: get-size(16px 24px);
 }
 
 .ui-modal__footer {
@@ -382,10 +382,10 @@ $ui-modal-header-font-size      : rem(18px);
     display: flex;
     height: $ui-modal-footer-height;
     justify-content: flex-end;
-    padding: rem(0 24px);
+    padding: get-size(0 24px);
 
     .ui-button {
-        margin-left: rem(8px);
+        margin-left: get-size(8px);
 
         &:first-child {
             margin-left: 0;

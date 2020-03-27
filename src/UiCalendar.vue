@@ -138,7 +138,7 @@ export default {
 <style lang="scss">
 @import './styles/imports';
 
-$ui-calendar-padding: rem(8px) !default;
+$ui-calendar-padding: get-size(8px) !default;
 
 .ui-calendar {
     border-radius: 3px;
@@ -155,9 +155,9 @@ $ui-calendar-padding: rem(8px) !default;
     }
 
     .ui-calendar__header {
-        height: $ui-calendar-controls-height + rem(8px);
-        padding-left: rem(8px);
-        padding-right: rem(8px);
+        height: $ui-calendar-controls-height + get-size(8px);
+        padding-left: get-size(8px);
+        padding-right: get-size(8px);
     }
 }
 
@@ -166,8 +166,8 @@ $ui-calendar-padding: rem(8px) !default;
     overflow: hidden;
     position: relative;
     width: 100%;
-    padding: rem(8px);
-    padding-top: rem(4px);
+    padding: get-size(8px);
+    padding-top: get-size(4px);
     border: 1px solid #EEE;
     border-top: 0;
 }

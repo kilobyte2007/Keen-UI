@@ -102,8 +102,8 @@ export default {
     &.is-divider {
         background-color: rgba(black, 0.08);
         display: block;
-        height: rem(1px);
-        margin: rem(6px 0);
+        height: get-size(1px);
+        margin: get-size(6px 0);
         padding: 0;
     }
 
@@ -112,7 +112,7 @@ export default {
         cursor: pointer;
         font-size: $ui-dropdown-item-font-size;
         font-weight: normal;
-        min-height: rem(40px);
+        min-height: get-size(40px);
         outline: none;
         text-decoration: none;
 
@@ -136,14 +136,14 @@ export default {
 .ui-menu-option__content {
     align-items: center;
     display: flex;
-    height: rem(40px);
-    padding: rem(0 16px);
+    height: get-size(40px);
+    padding: get-size(0 16px);
 }
 
 .ui-menu-option__icon {
     color: $secondary-text-color;
-    font-size: rem(18px);
-    margin-right: rem(16px);
+    font-size: get-size(18px);
+    margin-right: get-size(16px);
 }
 
 .ui-menu-option__text {
@@ -154,7 +154,7 @@ export default {
 .ui-menu-option__secondary-text {
     color: $hint-text-color;
     flex-shrink: 0;
-    font-size: rem(13px);
-    margin-left: rem(4px);
+    font-size: get-size(13px);
+    margin-left: get-size(4px);
 }
 </style>

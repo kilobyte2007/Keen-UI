@@ -385,7 +385,7 @@ export default {
 
     &.has-counter {
         .ui-textbox__feedback-text {
-            padding-right: rem(48px);
+            padding-right: get-size(48px);
         }
     }
 
@@ -462,7 +462,7 @@ export default {
 
 .ui-textbox__icon-wrapper {
     flex-shrink: 0;
-    margin-right: rem(12px);
+    margin-right: get-size(12px);
     padding-top: $ui-input-icon-margin-top;
 
     .ui-icon {
@@ -512,7 +512,7 @@ export default {
 .ui-textbox__textarea {
     overflow-x: hidden;
     overflow-y: auto;
-    padding-bottom: rem(6px);
+    padding-bottom: get-size(6px);
     resize: vertical;
 }
 
@@ -537,7 +537,7 @@ export default {
 
 .ui-textbox--icon-position-right {
     .ui-textbox__icon-wrapper {
-        margin-left: rem(8px);
+        margin-left: get-size(8px);
         margin-right: 0;
         order: 1;
     }

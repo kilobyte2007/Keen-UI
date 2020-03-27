@@ -150,11 +150,12 @@ export default {
 @import './styles/imports';
 
 $ui-collapsible-header-background           : $md-grey-200 !default;
-$ui-collapsible-header-background-hover     : $md-grey-300 !default;
+$ui-collapsible-border                      : $md-grey-200 !default;
+$ui-collapsible-header-background-hover     : $md-grey-300 !default;;
 
 .ui-collapsible {
     font-family: $font-stack;
-    margin-bottom: rem(8px);
+    margin-bottom: get-size(8px);
     width: 100%;
 
     &:not(.is-disabled) {
@@ -189,11 +190,11 @@ $ui-collapsible-header-background-hover     : $md-grey-300 !default;
     background-color: $ui-collapsible-header-background;
     cursor: pointer;
     display: flex;
-    font-size: rem(15px);
+    font-size: get-size(15px);
     line-height: 1.5;
     margin: 0;
-    min-height: rem(48px);
-    padding: rem(12px 16px);
+    min-height: get-size(48px);
+    padding: get-size(12px 16px);
     position: relative;
     touch-action: manipulation; // IE
     width: 100%;
@@ -204,14 +205,14 @@ $ui-collapsible-header-background-hover     : $md-grey-300 !default;
 }
 
 .ui-collapsible__header-content {
-    padding-right: rem(8px);
+    padding-right: get-size(8px);
 }
 
 .ui-collapsible__header-icon {
     color: $secondary-text-color;
     cursor: pointer;
     margin-left: auto;
-    margin-right: rem(-4px);
+    margin-right: get-size(-4px);
     transition: transform 0.3s ease;
 }
 
@@ -222,10 +223,10 @@ $ui-collapsible-header-background-hover     : $md-grey-300 !default;
 }
 
 .ui-collapsible__body {
-    border: 1px solid $md-grey-200;
+    border: 1px solid $ui-collapsible-border;
     border-top: 0;
     display: block;
-    padding: rem(16px);
+    padding: get-size(16px);
     width: 100%;
 }
 </style>

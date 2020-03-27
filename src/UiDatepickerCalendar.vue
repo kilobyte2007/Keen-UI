@@ -268,7 +268,7 @@ export default {
 <style lang="scss">
 @import './styles/imports';
 
-$ui-datepicker-calendar-padding : rem(8px) !default;
+$ui-datepicker-calendar-padding : get-size(8px) !default;
 
 .ui-datepicker-calendar {
     color: $primary-text-color;
@@ -278,7 +278,7 @@ $ui-datepicker-calendar-padding : rem(8px) !default;
 .ui-datepicker-calendar__header {
     color: white;
     line-height: 1;
-    padding: rem(16px);
+    padding: get-size(16px);
 }
 
 .ui-datepicker-calendar__header-year,
@@ -300,13 +300,13 @@ $ui-datepicker-calendar-padding : rem(8px) !default;
 }
 
 .ui-datepicker-calendar__header-year {
-    font-size: rem(15px);
+    font-size: get-size(15px);
     font-weight: 600;
-    margin-bottom: rem(8px);
+    margin-bottom: get-size(8px);
 }
 
 .ui-datepicker-calendar__header-date {
-    font-size: rem(22px);
+    font-size: get-size(22px);
 }
 
 .ui-datepicker-calendar__body {
@@ -339,15 +339,15 @@ $ui-datepicker-calendar-padding : rem(8px) !default;
     align-items: center;
     cursor: pointer;
     display: flex;
-    font-size: rem(16px);
-    height: rem(36px);
+    font-size: get-size(16px);
+    height: get-size(36px);
     justify-content: center;
     outline: none;
 
     &.is-selected {
-        font-size: rem(24px);
+        font-size: get-size(24px);
         font-weight: 600;
-        height: rem(40px);
+        height: get-size(40px);
     }
 }
 
@@ -359,13 +359,13 @@ $ui-datepicker-calendar-padding : rem(8px) !default;
     display: flex;
 
     .ui-datepicker-calendar__header {
-        min-width: rem(128px);
+        min-width: get-size(128px);
     }
 
     .ui-datepicker-calendar__header-day {
-        margin-bottom: rem(12px);
+        margin-bottom: get-size(12px);
         display: block;
-        padding-top: rem(4px);
+        padding-top: get-size(4px);
     }
 }
 

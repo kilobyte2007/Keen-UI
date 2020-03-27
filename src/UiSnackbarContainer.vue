@@ -168,26 +168,26 @@ export default {
 
 .ui-snackbar-container {
     bottom: 0;
-    left: rem(8px);
+    left: get-size(8px);
     overflow: hidden;
     pointer-events: none;
     position: absolute;
 
     .ui-snackbar {
-        margin: rem(4px 4px 12px 4px);
+        margin: get-size(4px 4px 12px 4px);
         pointer-events: auto;
     }
 }
 
 .ui-snackbar-container--position-right {
     left: initial;
-    right: rem(8px);
+    right: get-size(8px);
 }
 
 .ui-snackbar-container--position-center {
     display: flex;
     justify-content: center;
-    left: rem(8px);
-    right: rem(8px);
+    left: get-size(8px);
+    right: get-size(8px);
 }
 </style>

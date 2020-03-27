@@ -133,13 +133,13 @@ export default {
 <style lang="scss">
 @import './styles/imports';
 
-$ui-switch-height           : rem(32px) !default;
+$ui-switch-height           : get-size(32px) !default;
 
-$ui-switch-thumb-size       : rem(20px) !default;
+$ui-switch-thumb-size       : get-size(20px) !default;
 $ui-switch-thumb-color      : $md-grey-50 !default;
 
-$ui-switch-track-width      : rem(34px) !default;
-$ui-switch-track-height     : rem(14px) !default;
+$ui-switch-track-width      : get-size(34px) !default;
+$ui-switch-track-height     : get-size(14px) !default;
 
 $ui-switch-focus-ring-size  : $ui-switch-thumb-size * 2.1 !default;
 
@@ -195,7 +195,7 @@ $ui-switch-focus-ring-size  : $ui-switch-thumb-size * 2.1 !default;
 
 .ui-switch__track {
     background-color: rgba(black, 0.26);
-    border-radius: rem(8px);
+    border-radius: get-size(8px);
     height: $ui-switch-track-height;
     position: absolute;
     top: (($ui-switch-thumb-size - $ui-switch-track-height) / 2);
@@ -232,8 +232,8 @@ $ui-switch-focus-ring-size  : $ui-switch-thumb-size * 2.1 !default;
 
 .ui-switch__label-text {
     cursor: pointer;
-    font-size: rem(15px);
-    margin-left: rem(16px);
+    font-size: get-size(15px);
+    margin-left: get-size(16px);
 }
 
 // ================================================

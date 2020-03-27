@@ -200,10 +200,10 @@ export default {
 <style lang="scss">
 @import './styles/imports';
 
-$ui-icon-button-size            : rem(36px) !default;
-$ui-icon-button--size-mini      : rem(24px) !default;
-$ui-icon-button--size-small     : rem(32px) !default;
-$ui-icon-button--size-large     : rem(48px) !default;
+$ui-icon-button-size            : get-size(36px) !default;
+$ui-icon-button--size-mini      : get-size(24px) !default;
+$ui-icon-button--size-small     : get-size(32px) !default;
+$ui-icon-button--size-large     : get-size(48px) !default;
 
 .ui-icon-button {
     align-items: center;
@@ -310,7 +310,7 @@ $ui-icon-button--size-large     : rem(48px) !default;
     }
 
     .ui-icon {
-        font-size: rem(18px);
+        font-size: get-size(18px);
     }
 }
 
@@ -322,7 +322,7 @@ $ui-icon-button--size-large     : rem(48px) !default;
     }
 
     .ui-icon {
-        font-size: rem(18px);
+        font-size: get-size(18px);
     }
 }
 

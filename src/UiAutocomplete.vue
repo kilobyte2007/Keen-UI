@@ -598,7 +598,7 @@ export default {
     display: block;
     list-style-type: none;
     margin: 0;
-    margin-bottom: rem(8px);
+    margin-bottom: get-size(8px);
     min-width: 100%;
     padding: 0;
     position: absolute;
@@ -620,7 +620,7 @@ export default {
 
 .ui-autocomplete--icon-position-right {
     .ui-autocomplete__icon-wrapper {
-        margin-left: rem(8px);
+        margin-left: get-size(8px);
         margin-right: 0;
         order: 1;
     }

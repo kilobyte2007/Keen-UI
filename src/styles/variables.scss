@@ -6,6 +6,7 @@ $font-stack             : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 
 // Base font size
 $base-font-size         : 100% !default; // typically 16px in most browsers
+$sizing-strategy        : 'rem' !default;
 
 // Brand colors
 $brand-primary-color    : $md-blue !default;
@@ -30,22 +31,22 @@ $divider-color          : rgba(black, 0.12) !default;
 // Input fields
 // ================================================
 
-$ui-input-height                    : rem(32px) !default;
-$ui-input-margin-bottom             : rem(16px) !default;
+$ui-input-height                    : get-size(32px) !default;
+$ui-input-margin-bottom             : get-size(16px) !default;
 
 // Input label
 $ui-input-label-color               : $secondary-text-color !default;
 $ui-input-label-color--hover        : rgba(black, 0.75) !default;
 $ui-input-label-color--active       : $brand-primary-color !default;
 $ui-input-label-color--invalid      : $md-red !default;
-$ui-input-label-font-size           : rem(15px) !default;
+$ui-input-label-font-size           : get-size(15px) !default;
 $ui-input-label-line-height         : normal !default;
 $ui-input-label-margin-bottom       : 0 !default;
-$ui-input-label-top--inline         : rem(26px) !default;
+$ui-input-label-top--inline         : get-size(26px) !default;
 
 // Input text
 $ui-input-text-color                : $primary-text-color !default;
-$ui-input-text-font-size            : rem(16px) !default;
+$ui-input-text-font-size            : get-size(16px) !default;
 $ui-input-text-color--disabled      : $disabled-text-color !default;
 $ui-input-text-color--invalid       : $md-red !default;
 
@@ -61,22 +62,22 @@ $ui-input-border-style--disabled    : dotted !default;
 // Input icons
 $ui-input-icon-color                    : $secondary-text-color !default;
 $ui-input-icon-opacity--disabled        : 0.6 !default;
-$ui-input-icon-margin-right             : rem(12px) !default;
-$ui-input-icon-margin-top               : rem(4px) !default;
-$ui-input-icon-margin-top--with-label   : rem(24px) !default;
+$ui-input-icon-margin-right             : get-size(12px) !default;
+$ui-input-icon-margin-top               : get-size(4px) !default;
+$ui-input-icon-margin-top--with-label   : get-size(24px) !default;
 
 // Input buttons (dropdown button icon, clear input button icon)
 $ui-input-button-color                  : $secondary-text-color !default;
 $ui-input-button-color--hover           : $primary-text-color !default;
 $ui-input-button-opacity--disabled      : 0.6 !default;
-$ui-input-button-size                   : rem(18px) !default;
-$ui-input-button-margin-top             : rem(7px) !default;
-$ui-input-button-margin-top--with-label : rem(27px) !default;
+$ui-input-button-size                   : get-size(18px) !default;
+$ui-input-button-margin-top             : get-size(7px) !default;
+$ui-input-button-margin-top--with-label : get-size(27px) !default;
 
 // Input feedback, help and error text
-$ui-input-feedback-font-size            : rem(14px) !default;
+$ui-input-feedback-font-size            : get-size(14px) !default;
 $ui-input-feedback-line-height          : 1.2 !default;
-$ui-input-feedback-padding-top          : rem(4px) !default;
+$ui-input-feedback-padding-top          : get-size(4px) !default;
 $ui-input-feedback-opacity--disabled    : 0.8 !default;
 $ui-input-feedback-color                : $secondary-text-color !default;
 $ui-input-feedback-color--invalid       : $md-red !default;
@@ -85,33 +86,33 @@ $ui-input-feedback-color--invalid       : $md-red !default;
 // Buttons (UiButton, UiFileupload)
 // ================================================
 
-$ui-button-font-size                : rem(14px) !default;
-$ui-button-font-size--small         : rem(14px) !default;
-$ui-button-font-size--large         : rem(16px) !default;
-$ui-button-height                   : rem(36px) !default;
-$ui-button-height--small            : rem(32px) !default;
-$ui-button-height--large            : rem(48px) !default;
+$ui-button-font-size                : get-size(14px) !default;
+$ui-button-font-size--small         : get-size(14px) !default;
+$ui-button-font-size--large         : get-size(16px) !default;
+$ui-button-height                   : get-size(36px) !default;
+$ui-button-height--small            : get-size(32px) !default;
+$ui-button-height--large            : get-size(48px) !default;
 
 // ================================================
 // Dropdowns (UiAutocomplete, UiPopover, UiMenu, UiSelect)
 // ================================================
 
-$ui-dropdown-item-font-size         : rem(15px) !default;
+$ui-dropdown-item-font-size         : get-size(15px) !default;
 $ui-menu-item-hover-color           : #EEEEEE; // rgba(black, 0.1);
 
 // ================================================
 // UiCalendar
 // ================================================
 
-$ui-calendar-cell-size              : rem(36px) !default;
-$ui-calendar-controls-height        : rem(40px) !default;
-$ui-calendar-month-header-height    : rem(40px) !default;
+$ui-calendar-cell-size              : get-size(36px) !default;
+$ui-calendar-controls-height        : get-size(40px) !default;
+$ui-calendar-month-header-height    : get-size(40px) !default;
 
 // ================================================
 // Border radius
 // ================================================
 
-$ui-default-border-radius       : rem(2px) !default;
+$ui-default-border-radius       : get-size(2px) !default;
 
 // ================================================
 // Z-index

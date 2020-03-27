@@ -564,7 +564,7 @@ export default {
     color: $ui-input-button-color;
     font-size: $ui-input-button-size;
     margin-left: auto;
-    margin-right: rem(-4px);
+    margin-right: get-size(-4px);
 }
 
 .ui-datepicker__feedback {
@@ -582,7 +582,7 @@ export default {
 
 .ui-datepicker--icon-position-right {
     .ui-datepicker__icon-wrapper {
-        margin-left: rem(8px);
+        margin-left: get-size(8px);
         margin-right: 0;
         order: 1;
     }

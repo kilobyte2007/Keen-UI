@@ -132,9 +132,9 @@ $ui-select-option-checkbox-color: rgba(black, 0.38) !default;
     background-position: 50%;
     background-size: cover;
     border-radius: 50%;
-    height: rem(32px);
-    margin-right: rem(12px);
-    width: rem(32px);
+    height: get-size(32px);
+    margin-right: get-size(12px);
+    width: get-size(32px);
 }
 
 .ui-select-option__checkbox {
@@ -147,10 +147,10 @@ $ui-select-option-checkbox-color: rgba(black, 0.38) !default;
 // ================================================
 
 .ui-select-option--type-basic {
-    padding: rem(6px 12px);
+    padding: get-size(6px 12px);
 }
 
 .ui-select-option--type-image {
-    padding: rem(4px 12px);
+    padding: get-size(4px 12px);
 }
 </style>

@@ -82,10 +82,10 @@ export default {
     cursor: pointer;
     display: flex;
     font-family: inherit;
-    height: rem(48px);
+    height: get-size(48px);
     justify-content: center;
-    min-width: rem(80px);
-    padding: rem(0 12px);
+    min-width: get-size(80px);
+    padding: get-size(0 12px);
     position: relative;
     text-transform: uppercase;
     transition: color 0.1s;
@@ -105,22 +105,22 @@ export default {
 .ui-tab-header-item--type-icon-and-text {
     display: flex;
     flex-direction: column;
-    height: rem(72px);
+    height: get-size(72px);
 
     .ui-tab-header-item__icon {
-        margin-bottom: rem(4px);
+        margin-bottom: get-size(4px);
     }
 }
 
 .ui-tab-header-item__text {
     @include text-truncation;
-    font-size: rem(15px);
+    font-size: get-size(15px);
     font-weight: 600;
 }
 
 .ui-tab-header-item__icon {
-    height: rem(24px);
-    width: rem(24px);
+    height: get-size(24px);
+    width: get-size(24px);
     color: currentColor;
 
     .ui-icon {
@@ -131,7 +131,7 @@ export default {
 .ui-tab-header-item::after {
     bottom: 0;
     content: '';
-    height: rem(3px);
+    height: get-size(3px);
     left: 0;
     opacity: 0;
     position: absolute;

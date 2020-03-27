@@ -368,24 +368,24 @@ export default {
 <style lang="scss">
 @import './styles/imports';
 
-$ui-slider-height                   : rem(18px) !default;
+$ui-slider-height                   : get-size(18px) !default;
 
 // Track line
-$ui-slider-track-height             : rem(3px) !default;
+$ui-slider-track-height             : get-size(3px) !default;
 $ui-slider-track-fill-color         : $brand-primary-color !default;
 $ui-slider-track-background-color   : rgba(black, 0.12) !default;
 
 // Drag thumb
-$ui-track-thumb-size                : rem(14px) !default;
+$ui-track-thumb-size                : get-size(14px) !default;
 $ui-track-thumb-fill-color          : $brand-primary-color !default;
 
 // Focus ring
-$ui-track-focus-ring-size                   : rem(36px) !default;
+$ui-track-focus-ring-size                   : get-size(36px) !default;
 $ui-track-focus-ring-transition-duration    : 0.2s !default;
 $ui-track-focus-ring-color                  : rgba($ui-track-thumb-fill-color, 0.38) !default;
 
 // Marker
-$ui-slider-marker-size                      : rem(36px);
+$ui-slider-marker-size                      : get-size(36px);
 
 .ui-slider {
     align-items: center;
@@ -402,7 +402,7 @@ $ui-slider-marker-size                      : rem(36px);
 
         .ui-slider__marker {
             opacity: 1;
-            transform: scale(1) translateY(rem(-26px));
+            transform: scale(1) translateY(get-size(-26px));
         }
 
         .ui-slider__marker-text {
@@ -433,13 +433,13 @@ $ui-slider-marker-size                      : rem(36px);
 
         .ui-slider__thumb {
             background-color: #DDD;
-            border: rem(2px) solid white;
+            border: get-size(2px) solid white;
         }
     }
 }
 
 .ui-slider__icon {
-    margin-right: rem(16px);
+    margin-right: get-size(16px);
 
     .ui-icon {
         color: $secondary-text-color;
@@ -478,7 +478,7 @@ $ui-slider-marker-size                      : rem(36px);
     opacity: 0;
     position: absolute;
     transition: opacity 0.2s ease;
-    width: rem(2px);
+    width: get-size(2px);
     z-index: 1;
 }
 
@@ -537,12 +537,12 @@ $ui-slider-marker-size                      : rem(36px);
 
 .ui-slider__marker-text {
     color: $ui-track-thumb-fill-color;;
-    font-size: rem(13px);
+    font-size: get-size(13px);
     font-weight: 600;
     left: 0;
     position: absolute;
     text-align: center;
-    top: rem(4px);
+    top: get-size(4px);
     transition: color $ui-track-focus-ring-transition-duration ease;
     width: $ui-slider-marker-size;
 }
